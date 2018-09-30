@@ -12,17 +12,31 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+
         //Exercicio Aula 55 Banco
-        Conta c1 = new Conta("Bruno Garcia",10306, 55.00);
+        System.out.println("Criar conta com deposito inicial? 1-Sim | 2-Nao");
+        int menu = sc.nextInt();
+        String titular;
+        double nConta;
+        double deposito;
+        if (menu == 1) {
+            titular = "Bruno Garcia";
+            nConta = 13068;
+            deposito = 55.0;
+        }else{
+            titular = "Bruno Garcia";
+            nConta = 13068;
+            deposito = 0.0;
+        }
+        Conta c1 = new Conta(titular, nConta, deposito);
         System.out.println("Cliente: "
-                +c1.titular
-                +" - Nº Conta: "
-                +c1.nConta
-                +" - Saldo: "
-                +c1.consultaSaldo());
+                   + c1.titular
+                   + " - Nº Conta: "
+                   + c1.nConta
+                   + " - Saldo: "
+                   + c1.consultaSaldo());
         c1.deposito(120);
         c1.saque(221.50);
-
 
         /* RESOLUCAO EXERCICIO 46
         double moeda;
@@ -34,6 +48,5 @@ public class Main {
         */
 
 
-
+        }
     }
-}

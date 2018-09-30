@@ -20,16 +20,16 @@ public class Conta {
     //SAQUE/DEPOSITO OPERACOES BASICAS
     public void deposito(double valor){
         this.saldo += valor;
-        System.out.println("Valor depositado: "+ valor);
-        System.out.println("Saldo disponivel: "+ this.saldo);
+        System.out.println("Valor depositado: R$"+ valor);
+        System.out.println("Saldo disponivel: R$"+ this.saldo);
     }
     public void saque(double valor){
         this.saldo -= (valor + 5.0);
-        System.out.println("Valor Sacado: "+ valor);
+        System.out.println("Valor Sacado: R$"+ valor);
         if(this.saldo <0){
             System.out.println("Cliente utilizando cheque especial.");
         }
-        System.out.println("Saldo disponivel: "+ this.saldo);
+        System.out.println("Saldo disponivel: R$"+ this.saldo);
     }
 
     public double consultaSaldo(){
