@@ -14,7 +14,12 @@ public class Main {
 
         //Exercicio Aula 55 Banco
         Conta c1 = new Conta("Bruno Garcia",10306, 55.00);
-        System.out.println("Saldo: "+ c1.consultaSaldo());
+        System.out.println("Cliente: "
+                +c1.titular
+                +" - Nº Conta: "
+                +c1.nConta
+                +" - Saldo: "
+                +c1.consultaSaldo());
         c1.deposito(120);
         c1.saque(221.50);
 
