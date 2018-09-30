@@ -1,5 +1,6 @@
 package application;
 
+import entities.Conta;
 import entities.Cotacao;
 
 import java.util.Locale;
@@ -11,17 +12,11 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-
-
-
-
-
-
-
-
-
-
-
+        //Exercicio Aula 55 Banco
+        Conta c1 = new Conta("Bruno Garcia",10306, 55.00);
+        System.out.println("Saldo: "+ c1.consultaSaldo());
+        c1.deposito(120);
+        c1.saque(221.50);
 
 
         /* RESOLUCAO EXERCICIO 46
