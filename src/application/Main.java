@@ -20,8 +20,11 @@ public class Main {
         double nConta;
         double deposito;
         if (menu == 1) {
+            System.out.println("Digite nome do cliente: ");
             titular = "Bruno Garcia";
+            System.out.println("Digite numero da Conta: ");
             nConta = 13068;
+            System.out.println("Digite deposito inicial");
             deposito = 55.0;
         }else{
             titular = "Bruno Garcia";

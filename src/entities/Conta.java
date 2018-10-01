@@ -14,7 +14,7 @@ public class Conta {
     public Conta(String nome,double conta,double depositoInicial ){
         this.titular = nome;
         this.nConta = conta;
-        this.saldo = depositoInicial;
+        deposito(depositoInicial);
     }
 
     //SAQUE/DEPOSITO OPERACOES BASICAS
