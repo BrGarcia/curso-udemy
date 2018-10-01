@@ -40,8 +40,8 @@ public class Conta {
                 + titular
                 + " - Nº Conta: "
                 + nConta
-                + " - Saldo: "
-                + consultaSaldo();
+                + " - Saldo: R$"
+                + String.format("%.2f", saldo);
     }
 
 }
