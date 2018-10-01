@@ -35,5 +35,13 @@ public class Conta {
     public double consultaSaldo(){
         return this.saldo;
     }
+    public String toString(){
+        return  "Cliente: "
+                + titular
+                + " - Nº Conta: "
+                + nConta
+                + " - Saldo: "
+                + consultaSaldo();
+    }
 
 }
