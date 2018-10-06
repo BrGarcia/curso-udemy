@@ -9,7 +9,9 @@ public class Produto {
         this.nome = nome;
         this.preco = preco;
     }
-    public
+    public double getPreco(){
+        return this.preco;
+    }
     public String toString(){
         return  "Produto: "
                 + nome
